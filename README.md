@@ -1,4 +1,4 @@
-# Welcome to P7 Music Studio!
+# Welcome to P7 Music Studio! [live Demo](https://pureshwargonekar.github.io/p7Music_Studio/)
 
 In this music studio web application, I have created a user-friendly and interactive platform that allows you to enjoy your favorite songs. Using a combination of HTML, CSS, and JavaScript, I have designed a visually appealing and responsive interface that enhances your music listening experience.
 
