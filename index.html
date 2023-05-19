@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Player</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8c6804ee00.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="body-header">
+            <section id="header-left">
+                <div class="brand">
+                    <div class="music-logo">
+                        <img src="image/p-logo.jpg" alt="">
+
+                    </div>
+                    <div class="brand-name">
+                        <h2>P7 Music<br> <b> Studio</b></h2>
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <ul class="horizontal-list">
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                            <a href="#">
+                                Favourites
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="header-right">
+
+                <!-- ----search bar------ -->
+                <form id="search-bar" method="get" action="https://www.google.com/search">
+                    <div class="speech">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="q" id="transcript" placeholder="Search" />
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </form>
+                <!-- -------bell icon -------- -->
+                <div class="bell-icon">
+                    <i class="fa-solid fa-bell fa-2x"></i>
+                </div>
+
+                <!-- ----------profile icon---------- -->
+                <div id="my-image">
+                    <img src="image/profile-pic.png" alt="profile">
+                </div>
+            </section>
+        </header>
+
+
+        <!-- ---------- main content ------------- -->
+        <main class="content">
+            <div class="song-side">
+                <div class="carousel-container">
+
+                    <section class="carousel" aria-label="Gallery">
+                        <ol class="carousel__viewport">
+                            <li id="carousel__slide1"
+                                tabindex="0"
+                                class="carousel__slide">
+                                <div class="carousel__snapper">
+                                    <img src="image/1.jpg" alt="">
+                                    <a href="#carousel__slide4"
+                                    class="carousel__prev">Go to last slide</a>
+                                    <a href="#carousel__slide2"
+                                    class="carousel__next">Go to next slide</a>
+                                </div>
+                            </li>
+                            <li id="carousel__slide2"
+                                tabindex="0"
+                                class="carousel__slide">
+                                <div class="carousel__snapper"><img src="image/2.jpg" alt=""></div>
+                                <a href="#carousel__slide1"
+                                    class="carousel__prev">Go to previous slide</a>
+                                <a href="#carousel__slide3"
+                                    class="carousel__next">Go to next slide</a>
+                            </li>
+                            <li id="carousel__slide3"
+                                tabindex="0"
+                                class="carousel__slide">
+                                <div class="carousel__snapper"><img src="image/3.jpg" alt=""></div>
+                                <a href="#carousel__slide2"
+                                    class="carousel__prev">Go to previous slide</a>
+                                <a href="#carousel__slide4"
+                                    class="carousel__next">Go to next slide</a>
+                            </li>
+                            <li id="carousel__slide4"
+                                tabindex="0"
+                                class="carousel__slide">
+                                <div class="carousel__snapper"><img src="image/4.jpg" alt=""></div>
+                                <a href="#carousel__slide3"
+                                    class="carousel__prev">Go to previous slide</a>
+                                <a href="#carousel__slide1"
+                                    class="carousel__next">Go to first slide</a>
+                            </li>
+                        </ol>
+                        <aside class="carousel__navigation">
+                            <ol class="carousel__navigation-list">
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide1"
+                                class="carousel__navigation-button">Go to slide 1</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide2"
+                                class="carousel__navigation-button">Go to slide 2</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide3"
+                                class="carousel__navigation-button">Go to slide 3</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide4"
+                                class="carousel__navigation-button">Go to slide 4</a>
+                            </li>
+                            </ol>
+                        </aside>
+                    </section>
+
+                </div>
+                <!-- -------- latest release-------- -->
+                <div class="latest-release">
+                    <h2>Latest Release</h2>
+                    <section class="albums">
+                        <!-- 1 album item -->
+                        <div class="album-item">
+                            <img src="image/1.jpg" alt="">
+                            <h4>On My Way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h4>
+                            <div class="threedots">
+                                <div class="dropdown" style="color:white;">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-play"></i>
+                                            <a href="#">Play Now</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-plus"></i>
+                                            <a href="#">Add To Queue</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-sharp fa-solid fa-heart"></i>
+                                            <a href="#">Add To Fav</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-circle-info"></i>
+                                            <a href="#">Get Info</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <p>4:44</p>
+                            </div>
+                        </div>
+
+                        <!-- 2nd album item -->
+                        <div class="album-item">
+                            <img src="image/2.jpg" alt="">
+                            <h4>On My Way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h4>
+                            <div class="threedots">
+                                <div class="dropdown" style="color:white;">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-play"></i>
+                                            <a href="#">Play Now</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-plus"></i>
+                                            <a href="#">Add To Queue</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-sharp fa-solid fa-heart"></i>
+                                            <a href="#">Add To Fav</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-circle-info"></i>
+                                            <a href="#">Get Info</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <p>4:44</p>
+                            </div>
+                        </div>
+
+                        <!-- 3 album item -->
+                        <div class="album-item">
+                            <img src="image/3.jpg" alt="">
+                            <h4>On My Way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h4>
+                            <div class="threedots">
+                                <div class="dropdown" style="color:white;">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-play"></i>
+                                            <a href="#">Play Now</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-plus"></i>
+                                            <a href="#">Add To Queue</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-sharp fa-solid fa-heart"></i>
+                                            <a href="#">Add To Fav</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-circle-info"></i>
+                                            <a href="#">Get Info</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <p>4:44</p>
+                            </div>
+                        </div>
+
+                        <!-- 4 album item -->
+                        <div class="album-item">
+                            <img src="image/12.jpg" alt="">
+                            <h4>On My Way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h4>
+                            <div class="threedots">
+                                <div class="dropdown" style="color:white;">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <div class="dropdown-content">
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-play"></i>
+                                            <a href="#">Play Now</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-plus"></i>
+                                            <a href="#">Add To Queue</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-sharp fa-solid fa-heart"></i>
+                                            <a href="#">Add To Fav</a>
+                                        </div>
+                                        <hr>
+                                        <div class="dropdown-item">
+                                            <i class="fa-solid fa-circle-info"></i>
+                                            <a href="#">Get Info</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <p>4:44</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- ----------------Popular Artist------------ -->
+                <div class="popular-artist">
+                    <h2>Popular Artist</h2>
+                    <div class="artist-list">
+
+                        <div class="artist-container">
+                            <img src="image/justin-bieber-lede.jpg" alt="">
+                            <p>Justin Bieber</p>
+                        </div>
+
+                        <div class="artist-container">
+                            <img src="image/honey.jpg" alt="">
+                            <p>Honey Singh</p>
+                        </div>
+
+                        <div class="artist-container">
+                            <img src="image/arjit.jpg" alt="">
+                            <p>Arijit Singh</p>
+                        </div>
+
+                        <div class="artist-container">
+                            <img src="image/jubin Nautiyal.jpg" alt="">
+                            <p>Jubin Nautiyal</p>
+                        </div>
+
+                        <div class="artist-container">
+                            <img src="image/guru.jpg" alt="">
+                            <p>Guru Randhawa</p>
+                        </div>
+
+                        <div class="artist-container">
+                            <img src="image/dhvani.jpg" alt="">
+                            <p>Dhvani Bhanushali</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- ---------- genre ----------- -->
+                <div class="genre">
+                    <img src="image/listening-music.png" alt="">
+                    <div class="genre-image">Love
+                    </div>
+
+                    <div class="genre-image" style="background-image: url(image/radio.avif);">Retro
+                    </div>
+
+                    <div class="genre-image" style="background-image: url(image/chill.avif);">Chill
+                    </div>
+
+                    <div class="genre-image" style="background-image: url(image/workout.avif);">Workout
+                    </div>
+
+                    <div class="genre-image" style="background-image: url(image/pop.avif);">Pop
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ------------ Queue List---------- -->
+            <div class="queue-side">
+                <header class="queue-header">
+                    <h1>Queue</h1>
+                    <div class="dropdown">
+                        <button class="dropbtn">Queue</button>
+                        <i class="fa-solid fa-angle-down fa-xs"></i>
+                        <div class="dropdown-content">
+                            <a href="#">Playlists</a>
+                            <hr>
+                            <a href="#">Favourites</a>
+                        </div>
+                    </div>
+                </header>
+                <div class="queue-list">
+                    <li class="songItem">
+                        <span>01</span>
+                        <img src="image/1.jpg" alt="">
+                        <h5>On My Way <br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="1"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>02</span>
+                        <img src="image/2.jpg" alt="">
+                        <h5>Faded <br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="2"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>03</span>
+                        <img src="image//3.jpg" alt="">
+                        <h5>Cartoon<br>
+                            <div class="subtitle">Daniel Levi</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>04</span>
+                        <img src="image//4.jpg" alt="">
+                        <h5>Worrior<br>
+                            <div class="subtitle">Mortals</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>05</span>
+                        <img src="image//5.jpg" alt="">
+                        <h5>Ertugrul<br>
+                            <div class="subtitle">Alan Walker</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>06</span>
+                        <img src="image//6.jpg" alt="">
+                        <h5>Subshine<br>
+                            <div class="subtitle">Josh W.</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>07</span>
+                        <img src="image//7.jpg" alt="">
+                        <h5>Wat Wat Wat<br>
+                            <div class="subtitle">Arijit Singh</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>08</span>
+                        <img src="image//8.jpg" alt="">
+                        <h5>Suna Hai<br>
+                            <div class="subtitle">Jubin Nautiyal</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>09</span>
+                        <img src="image//9.jpg" alt="">
+                        <h5>Dilbar<br>
+                            <div class="subtitle">Neha Kakkar</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>10    </span>
+                        <img src="image//10.jpg" alt="">
+                        <h5>Duniya<br>
+                            <div class="subtitle">Dhvani Bhanushali</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>11    </span>
+                        <img src="image//11.jpg" alt="">
+                        <h5>Lagdi Lahore Di<br>
+                            <div class="subtitle">Guru Randhawa</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>12  </span>
+                        <img src="image//12.jpg" alt="">
+                        <h5>Putt Jutt Da<br>
+                            <div class="subtitle">Diljit Dosanjh</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>13   </span>
+                        <img src="image//13.jpg" alt="">
+                        <h5>Tera hone Laga Hoon<br>
+                            <div class="subtitle">Atif Aslam</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>14  </span>
+                        <img src="image//14.jpg" alt="">
+                        <h5>Vaste<br>
+                            <div class="subtitle">Dhvani Bhanushali</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>15    </span>
+                        <img src="image//15.jpg" alt="">
+                        <h5>Lut Gaye<br>
+                            <div class="subtitle">Jubin Nautiyal</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>16    </span>
+                        <img src="image//16.jpg" alt="">
+                        <h5>Meri Jindgi Hai Tu<br>
+                            <div class="subtitle">Jubin Nautiyal</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>17   </span>
+                        <img src="image//17.jpg" alt="">
+                        <h5>Tumhe Dillagi<br>
+                            <div class="subtitle">Rahat Fatah Ali Khan</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>18    </span>
+                        <img src="image//18.jpg" alt="">
+                        <h5>Pasoori <br>
+                            <div class="subtitle">Li sethi & Shae Gill</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>19   </span>
+                        <img src="image//19.jpg" alt="">
+                        <h5>Isq Risk<br>
+                            <div class="subtitle">Rahat Fateh Ali Khan</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                    <li class="songItem">
+                        <span>20    </span>
+                        <img src="image//20.jpg" alt="">
+                        <h5>Vande Matram<br>
+                            <div class="subtitle">A R Rahman</div>
+                        </h5>
+                        <i class="fa-regular fa-heart" id="3"></i>
+                    </li>
+
+                </div>
+            </div>
+        </main>
+        <div class="master-play">
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="image/19.jpg" alt="" class="poster_master_play">
+            <h5 id="title">
+                On My Way
+                <div class="subtitle">Alan Walker</div>
+            </h5>
+            <div class="icon">
+                <i class="fa-solid fa-music suffle">Next</i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-download"></i>
+            </div>
+            <span id="currentStart">0.00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0.30</span>
+            <div class="vol">
+                <!-- sound icon not working -->
+                <!-- <i class="fa-solid fa-volume" id="vol_icon"></i> --> 
+                <!-- <i class="fa-regular fa-volume"></i> -->
+                <i class="fa-solid fa-music" id="vol_icon"></i>
+                <input type="range" id="vol" min="0" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </body>
+</html>
