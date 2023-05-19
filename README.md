@@ -19,7 +19,7 @@ In this music studio web application, I have created a user-friendly and interac
 ### Screenshots
 <img src="image/screenshot_1.png">
 
-<img src="image/screenshot_2.png">
+<img src="image/Screenshot_2.png">
 
 ***Experience the joy of music with My Music Studio. Start exploring the vast library, creating your favorite playlists, and building your song queue. Dive into a world of melodies, beats, and rhythms, and let the music take you on an unforgettable journey.***
 
